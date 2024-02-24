@@ -1,0 +1,30 @@
+
+    digraph G {
+    fontname="Helvetica,Arial,sans-serif"
+    graph [
+        rankdir = "LR"
+    ];
+    // Nodo de la tabla 1
+    node [shape=plaintext];
+    tabla1 [label=<
+        <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+            <TR>
+                <TD COLSPAN="2" BGCOLOR="darkgreen"><FONT COLOR="white">The amazing spiderman</FONT></TD>
+            </TR>
+            <TR>
+                <TD>2014</TD>
+                <TD>Accion</TD>
+            </TR>
+        </TABLE>
+    >];
+
+    // Nodos para los nombres de los actores
+    node [shape=box, style=filled, fillcolor=darkmagenta, fontcolor=white];
+    andrew [label="Andrew"];
+    emma_stone [label="Emma Stone"];
+
+    // Aristas de la tabla de la película a los nombres de los actores
+    tabla1 -> andrew;
+    tabla1 -> emma_stone;
+}
+    
